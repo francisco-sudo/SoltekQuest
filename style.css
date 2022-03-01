@@ -255,24 +255,22 @@ body{
 
 .formulario input[class="forgot-password-btn"]{
     width: 40%;
-    display: inline-block;
+    display: flex;
     align-items: center;
     justify-content: space-around;
     margin: auto;
     border: solid thin white;
     padding: .7rem;
     border-radius: 2rem;
-    background-color: black;
+    background-color: white;
     font-weight: 3rem;
     font-size: .8rem;
     cursor: pointer;
-    color: white;
-}
-
-.forgot-password-btn{
     color: blue;
-    font-size: small;
-    cursor: pointer;
+    text-decoration: underline;
+}
+.formulario input[class="forgot-password-btn"]:hover{
+    background-color: white;
 }
 
 
