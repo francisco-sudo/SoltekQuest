@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>SoltekQuest</title>
+    <script defer src="index.js"></script>
+    <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="Logo logo nav-link">
+                <a href="#">
+                    <img src="Images/Logo_Escala.png" alt="SoltekQuest">
+                </a>
+            </div>
+            <button class="toggle nav-toggle">
+                <a href="#">
+                    <i class='bx bx-menu'></i>
+                </a>
+            </button>
+            <ul class="nav-menu ">
+                <li class="nav-menu-item"><a href="#" class="nav-menu-link nav-link nav-menu-link_active">Ayuda<i
+                            class='bx bx-help-circle'></i></a></li>
+                <li class="nav-menu-item"><a href="#" class="nav-menu-link nav-link nav-menu-link_active">Contactanos<i
+                            class='bx bx-phone'></i></a></li>
+                <li class="dropdown">
+                    <button class="user">Usuario<i class='bx bx-user'></i></button>
+                    <div class="dropdown-content">
+                        <a href="#" class="nav-menu-link nav-link nav-menu-link_active">Mi cuenta</a>
+                        <a href="#" class="nav-menu-link nav-link nav-menu-link_active">Mis encuestas</a>
+                        <a href="#" class="nav-menu-link nav-link nav-menu-link_active">Cerrar sesión</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container-sesion option">
+        <form class="formulario-user">
+            <a href="#">
+                <img class="user-image" src="Images/usuario_escala.png" alt="userscale">
+            </a>
+            <h2>Nombre de Usuario</h2>
+        </form>
+
+        <form class="formulario-opcion">
+            <input type="button" value="Crear Encuesta" class="quest-btn">
+            <input type="button" value="Mis Encuestas" class="my-quest-btn">
+            <input type="button" value="Historial" class="historial-btn">
+
+        </form>
+    </div>
+
+    <div class="container-sesion cretae-quest">
+        <form class="formulario-quest">
+            <h2>Pregunta 1</h2>
+            <input type="text" name="" id="">
+            <select name="" id="" class="dropdown-menu-option">
+                <option value="respuesta" class="dropdown-menu">Seleccione tipo de respuesta</option>
+                <option value="multiple" class="dropdown-menu">Opcion multiple</option>
+                <option value="abierta" class="dropdown-menu">Abierta</option>
+                <option value="datosp" class="dropdown-menu">Datos personales</option>
+                <option value="multiplea" class="dropdown-menu">Multiple abierta</option>
+                <option value="calificacion" class="dropdown-menu">Calificacion</option>
+                <option value="verificacion" class="dropdown-menu">Verificacion</option>
+            </select>
+        </form>
+    </div>
+
+</body>

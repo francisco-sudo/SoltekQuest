@@ -33,6 +33,7 @@ body{
     max-width: 1400px;
     margin: 10px auto;
     
+    
 }
 
 .nav-link{
@@ -175,6 +176,7 @@ body{
 }
 
 .formulario{
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.4);
     width: 400px;
     padding: 1rem;
     margin: 3rem;
@@ -273,6 +275,12 @@ body{
     background-color: white;
 }
 
+.forgot-password-btn{
+    color: blue;
+    font-size: small;
+    cursor: pointer;
+}
+
 
 .sign-up{
     position: absolute;
@@ -300,3 +308,155 @@ body{
     opacity: 1;
     visibility: visible;
 }
+
+.dropdown{
+    display: inline-block;
+    position: relative;
+}
+
+.user{
+    margin: 0 10px;
+    line-height: 20px;
+    text-transform: uppercase;
+    width: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: solid thin #F59E2D;
+    padding: .7rem;
+    border-radius: .3rem;
+    background-color: #F59E2D;
+    font-weight: 3rem;
+    cursor: pointer;
+    color: white; 
+    font-size: 18px;
+}
+
+.user:hover{
+    background-color: orange;
+    transition: all .3s ease-in;
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    width: 100%;
+    overflow: auto;
+    background-color: white;
+    color: black;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.4);
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+    color: white;
+}
+
+.dropdown-content a {
+    display: block;
+    color: black;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover {
+    background-color: orange;
+    color: white;
+
+}
+
+.formulario-opcion{
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.4);
+    width: 800px;
+    height: 140px;
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 3rem;
+    background-color: rgb(150, 150, 150);
+    text-align: center;
+    align-items: center;
+}
+
+.formulario-opcion input[type="button"]{
+    margin: 0 10px;
+    width: 30%;
+    height: 80%;
+    display: inline-block;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+    border: solid thin rgb(105, 105, 105);
+    padding: .7rem;
+    border-radius: 2rem;
+    background-color: #F59E2D;
+    font-weight: 3rem;
+    font-size: .8rem;
+    cursor: pointer;
+    color: black;
+}
+
+.formulario-opcion input[type="button"]:hover{
+    background-color: orange;
+    transition: all .2s ease-in;
+    color: white;
+}
+
+.formulario-user{
+    width: 600px;
+    height: 200px;
+    padding: 1rem;
+    margin: 3rem;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.container-sesion {
+    width: 90%;
+    height: 90vh;
+    display: flex;
+    justify-content: space-around;
+    transition: all .5s ease-out;
+}
+
+.formulario-quest input{
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.4);
+    width: 800px;
+    height: 60px;
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 1rem;
+    font-size: larger;
+    top: 0;
+    position: relative;
+}
+
+.dropdown-menu-option{
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.4);
+    width: 500px;
+    height: 60px;
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 1rem;
+    font-size: larger;
+    position: relative;
+}
+
+.dropdown-menu{
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.4);
+    width: 500px;
+    height: 60px;
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 1rem;
+    font-size: larger;
+    position: relative;
+}
+
+.option{
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+}
+

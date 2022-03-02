@@ -7,7 +7,8 @@ const btnSignIn = document.querySelector(".sign-in-btn"),
     signIn = document.querySelector(".sign-in"),
     btnForgotPass = document.querySelector(".forgot-password-btn"),
     btnSignIn2 = document.querySelector(".sign-in-btn-2"),
-    forgotPass = document.querySelector(".forgot-password");
+    forgotPass = document.querySelector(".forgot-password"),
+    btnSignInSummit = document.querySelector("sign-in-summit-btn");
 
 
 navToggle.addEventListener("click", () =>{
@@ -25,5 +26,11 @@ document.addEventListener("click", e =>{
     if(e.target === btnForgotPass || e.target === btnSignIn2){
         signIn.classList.toggle("active");
         forgotPass.classList.toggle("active");
+    }
+});
+
+document.addEventListener("click", e =>{
+    if(e.target === btnSignInSummit){
+        signIn.classList.toggle("active");
     }
 });
