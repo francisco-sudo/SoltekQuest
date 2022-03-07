@@ -367,18 +367,21 @@ body{
 
 .formulario-opcion{
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.4);
+    position: absolute;
     width: 800px;
     height: 140px;
+    top: 50%;
+    left: 50%;
+    margin: -70px 0 0 -400px;
     border-radius: 10px;
     padding: 1rem;
-    margin: 3rem;
     background-color: rgb(150, 150, 150);
     text-align: center;
     align-items: center;
+    
 }
 
 .formulario-opcion input[type="button"]{
-    margin: 0 10px;
     width: 30%;
     height: 80%;
     display: inline-block;
@@ -406,24 +409,31 @@ body{
     height: 200px;
     padding: 1rem;
     margin: 3rem;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    margin: -100px 0 0 -300px;
     align-items: center;
     text-align: center;
     display: flex;
-    justify-content: center;
+    justify-content:space-around;
 }
 
 .container-sesion {
     width: 90%;
-    height: 90vh;
-    display: flex;
-    justify-content: space-around;
+    height: 80vh;
+    display: block;
+    justify-content: center;
     transition: all .5s ease-out;
+    
 }
 
 .formulario-quest input{
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.4);
     width: 800px;
     height: 60px;
+    border: white;
+    outline: none;
     border-radius: 10px;
     padding: 1rem;
     margin: 1rem;
@@ -436,6 +446,8 @@ body{
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.4);
     width: 500px;
     height: 60px;
+    border: white;
+    outline: none;
     border-radius: 10px;
     padding: 1rem;
     margin: 1rem;
@@ -444,7 +456,6 @@ body{
 }
 
 .dropdown-menu{
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.4);
     width: 500px;
     height: 60px;
     border-radius: 10px;
@@ -452,11 +463,116 @@ body{
     margin: 1rem;
     font-size: larger;
     position: relative;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.4);
 }
 
-.option{
+.create-quest{
     position: absolute;
+    opacity: 0;
+    visibility: hidden; 
+}
+.create-quest.active{
+    opacity: 1;
+    visibility: visible; 
+}
+.option.active{
     opacity: 0;
     visibility: hidden;
 }
 
+/*Respuestas estilizadas*/
+/*Respuesta con Opcion Multiple*/
+.formulario-quest-res{
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.4);
+    width: 800px;
+    height: 60px;
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 1rem;
+    font-size: larger;
+    top: 0;
+    position: relative;
+    align-items: center;
+}
+.formulario-quest-res input{
+    background-color: transparent;
+    border: white;
+    outline: none;
+    border-bottom: orange thin solid;
+    font-size: 1rem;
+    font-size: larger;
+}
+.formulario-quest-res input[type=radio]{ 
+    border: 0px; 
+    width: 1.5rem;
+    height: 1.5rem; 
+}
+/*Respuesta Abierta*/
+.formulario-quest-ab{
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.4);
+    width: 800px;
+    height: 60px;
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 1rem;
+    font-size: larger;
+    top: 0;
+    position: relative;
+    align-items: center;
+}
+
+.formulario-quest-ab input{
+    background-color: transparent;
+    border: white;
+    outline: none;
+    border-bottom: orange thin solid;
+    font-size: 1rem;
+    font-size: larger;
+}
+
+.formulario-quest-ab input[type=text]{ 
+    width: 100%;
+    background-color: transparent;
+    border: white;
+    outline: none;
+    border-bottom: orange thin solid;
+    font-size: 1rem;
+    font-size: larger;
+}
+
+/*Respuesta Datos Personales*/
+/*Multiple Abierta*/
+/*Calificacion*/
+/*Verificacion*/
+
+/*Tipos de respuesta hidden or visible*/
+.option-multiple.desactive{
+    opacity: 0;
+    visibility: hidden; 
+}
+.abierta.desactive{
+    opacity: 0;
+    visibility: hidden; 
+}
+
+.option-multiple{
+    position: absolute;
+    opacity: 0;
+    visibility: hidden; 
+}
+.option-multiple.active{
+    opacity: 1;
+    visibility: visible; 
+}
+
+.abierta{
+    position: absolute;
+    opacity: 0;
+    visibility: hidden; 
+}
+.abierta.active{
+    opacity: 1;
+    visibility: visible; 
+}
+
+/**/
