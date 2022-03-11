@@ -31,6 +31,6 @@ document.addEventListener("click", e =>{
 
 document.addEventListener("click", e =>{
     if(e.target === btnSignInSummit){
-        signIn.classList.toggle("active");
+        
     }
 });

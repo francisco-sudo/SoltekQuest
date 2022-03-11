@@ -107,13 +107,14 @@
         <!--Multiple Abierta-->
         <div class="container-sesion abierta-op">
             <form class="formulario-quest-ab-op">
-                <input type="text" placeholder="Pregunta"><input type="text" placeholder="Respuesta">
+                <input name="pregunta" type="text" placeholder="Pregunta"><input name="respuesta" type="text" placeholder="Respuesta">
             </form>
         </div>
         <!--Calificacion-->
         <div class="container-sesion range">
             <form class="formulario-quest-range">
-                <input type="range" min="0" max="100">
+                <div id="valorid"></div>
+                <input id="rangeid" type="range" value="50" min="0" max="100" autocomplete="off">
             </form>
         </div>
         <!--Verificacion-->

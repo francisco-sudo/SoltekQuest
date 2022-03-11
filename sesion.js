@@ -18,17 +18,43 @@ document.addEventListener("click", e =>{
 /*dropdown options*/
 const WithOutAns = document.querySelector(".without-ans"),
     OptionMultiple = document.querySelector(".option-multiple"),
-    Abierta = document.querySelector(".abierta");
+    Abierta = document.querySelector(".abierta"),
+    Personal = document.querySelector(".personal"),
+    AbiertaOp = document.querySelector(".abierta-op"),
+    RangeA = document.querySelector(".range"),
+    CheckBox = document.querySelector(".checkbox");
 
 function selectelement(){
     let dropdownnans = document.getElementById("typeanswers");
     let answer = dropdownnans.value;
+    if(answer == "abierta" ){
+       Abierta.classList.toggle("active");
+    }
     if(answer == "multiple"){
         OptionMultiple.classList.toggle("active");
-        Abierta.classList.toggle("desactive");;
     }
-    if(answer == "abierta" ){
-        Abierta.classList.toggle("active");
-        OptionMultiple.classList.toggle("desactive");;
+    if(answer == "datosp"){
+        Personal.classList.toggle("active");
     }
+    if(answer == "multiplea"){
+        AbiertaOp.classList.toggle("active");
+    }
+    if(answer == "calificacion"){
+        RangeA.classList.toggle("active");
+    }
+    if(answer == "verificacion"){
+        CheckBox.classList.toggle("active");
+    }
+}
+
+var elInput = document.querySelector('#rangeid');
+if (elInput) {
+  var etiqueta = document.querySelector('#valorid');
+  if (etiqueta) {
+    etiqueta.innerHTML = elInput.value;
+
+    elInput.addEventListener('input', function() {
+      etiqueta.innerHTML = elInput.value;
+    }, false);
+  }
 }
